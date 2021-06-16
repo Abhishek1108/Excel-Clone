@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Comic+Neue:wght@300&family=EB+Garamond&family=Goblin+One&family=Lobster&family=Lora&family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Sheet</title>
+    <div class="menu-bar">
+      <div class="sheet-icon">
+        <i class="fas fa-file-excel"></i>
+      </div>
+      <div class="sheet-info">
+       <input type="text" id="sheet-tittle" value="Untitled spreadsheet">
+       <div class="sheet-options">
+         <div class="file">File</div>
+         <div class="edit">Edit</div>
+         <div class="view">View</div>
+         <div class="insert">Insert</div>
+         <div class="format">Format</div>
+         <div class="data">Data</div>
+         <div class="tools"> Tools</div>
+         <div class="add-on">Add-ons</div>
+       </div>
+      </div>
+      
+
+    </div>
+    <div class="menu-options">
+       <div class="redo-undo-actions">
+         <div class="redo"><i class="fas fa-redo"></i> </div>
+         <div class="undo"> <i class="fas fa-undo"></i>  </div>
+       </div>
+       <!-- redo undo action end -->
+       <div class="font-styling">
+         <div class="font-type">
+           <select name="" id="type" style="font-size: 0.8rem;">
+             <option value="Default (Arial)" style="font-size:1.5rem; color: black;" >Default (Arial) </option>
+             <option value="Comfortaa" style="font-family:'Comfortaa', cursive;font-size:1.5rem; color: black;"> Comfortaa</option>
+             <option value="Comic" style="font-family:'Comic Neue', cursive;font-size:1.5rem;color: black; "> Comic Sans MS </option>
+             <option value="Garamond" style="font-family:'EB Garamond', serif;font-size:1.5rem;color: black; ">EB Garamond</option>
+             <option value="Goblin" style="font-family:'Goblin One', cursive ;font-size:1.5rem;color: black;" > Goblin One</option>
+             <option value="Caveat" style="font-family:'Caveat', cursive ;font-size:1.5rem;color: black;"> Caveat</option>
+             <option value="Lobster" style="font-family:'Lobster', cursive ;font-size:1.5rem;color: black;"> Lobster</option>
+             <option value="Lora" style="font-family: 'Lora', serif;font-size:1.5rem;color: black;"> Lora</option>
+             <option value="Nunito" style="font-family: 'Nunito', sans-serif;font-size:1.5rem;color: black;"> Nunito</option>
+           </select>
+         </div>
+         <div class="font-size">
+           <select name="" id="size">
+             <option value="6" style="color: black;" >6</option>
+             <option value="7" style="color: black;">7</option>
+             <option value="8" style="color: black;">8</option>
+             <option value="9"style="color: black;">9</option>
+             <option value="10"style="color: black;">10</option>
+             <option value="11"style="color: black;">11</option>
+             <option value="12"style="color: black;">12</option>
+             <option value="14"style="color: black;">14</option>
+             <option value="18"style="color: black;">18</option>
+             <option value="24"style="color: black;">24</option>
+             <option value="36"style="color: black;">36</option>
+           </select>
+         </div>
+       </div>
+       <!-- font styling div end -->
+       <div class="font-weight">
+         <div class="font-bold">  <i class="fas fa-bold"></i>   </div>
+         <div class="font-italic"> <i class="fas fa-italic"></i>  </div>
+         <div class="font-underline">  <i class="fas fa-underline"></i> </div>
+       </div>
+
+       <div class="text-alignment-action">
+         <div class="text-align-left"><i class="fas fa-align-left"></i></div>
+         <div class="text-align-center"><i class="fas fa-align-center"></i></div>
+         <div class="text-align-right"><i class="fas fa-align-right"></i></div>
+       </div>
+       <!-- font and cell color -->
+       <!-- <div class="text-styling">
+        <div class="font-color">
+          <i class="fas fa-font"></i>
+          <input type="color" id="color">
+        </div>
+
+       </div> -->
+
+
+      <!-- menu option end -->
+    </div>
+    <div class="calculations">
+      <div class="address"></div>
+      <div class="fofx">f(x)</div>
+      <input type="text" id="formula">
+    </div>
+      <div class="cells-content"> cells</div>
+      <div class="sheets">
+      <div class="add-sheet">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="sheets-list">
+        <div class="sheet active-sheet" sid=0>Sheet1 
+          <!-- <select name="" id="sheet-delete">
+            <option value="">Delete Sheet</option>
+          </select> -->
+        </div>
+      
+      </div>  
+      
+      </div>
+</head>
+<body>
+    <script src="./init.js"></script>
+    <script src="./script.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./sheets.js"></script>
+    <script src="./menuOptions.js"></script>
+    <script src="dist/xncolorpicker.min.js"></script>
+   
+</body>
+</html>
